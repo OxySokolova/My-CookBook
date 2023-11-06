@@ -37,27 +37,27 @@ function App() {
         
         <div className='box'>
           <h2>Find a Recipe</h2>
-        <div>
+          <div>
           <form onSubmit={finalSearch}>
             <input className='search' placeholder='Search...' onChange={myRecipeSearch} value={mySearch}/>
           </form>
-        </div>
-        <div className='container'>
+          </div>
+          <div className='container'>
           <button onClick = {finalSearch}>
             Click
           </button>
-        </div>
-        <hr />
-        <div className='scroll'>
-        {myRecipes.map((element,index)=>(
+          </div>
+          <hr />
+          <div className='scroll'>
+          {myRecipes.map((element,index)=>(
           <MyRecipesComponents key={index}
           label = {element.recipe.label}
           image = {element.recipe.image}
           calories = {element.recipe.calories}
           ingredients = {element.recipe.ingredientLines}
           />
-        ))}
-        </div>
+          ))}
+          </div>
         </div>
         </div>
     </div>  

@@ -36,6 +36,10 @@ video {
   display: flex;
   justify-content: space-around;
 }
+.container img{
+  max-width: 50%; 
+  height: auto;
+}
 .list {
   display: flex;
   flex-direction: column;
